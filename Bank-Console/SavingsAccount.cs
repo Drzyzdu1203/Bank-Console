@@ -14,7 +14,7 @@ namespace Bank_Console
         public string LastName;
         public long Pesel;
 
-        public void Init(string accountNumber, decimal balance, string firstName, string lastName, long pesel)
+        public SavingsAccount(string accountNumber, decimal balance, string firstName, string lastName, long pesel)
         {
             AccountNumber = accountNumber;
             Balance = balance;

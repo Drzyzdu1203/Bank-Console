@@ -16,15 +16,10 @@ namespace Bank_Console
             Console.WriteLine(author);
             Console.WriteLine();
             
-            SavingsAccount savingsAccount = new SavingsAccount();
-            savingsAccount.Init("940000000001", 0.0M, "Mateusz" , "Drzyzga", 95031206855);
-                     
-            SavingsAccount savingsAccount2 = new SavingsAccount();
-            savingsAccount2.Init("940000000002", 0.0M, "Mateusz", "Drzyzga", 95031206855);
-
-            BillingAccount billingAccount = new BillingAccount();
-            billingAccount.Init("940000000003", 0.0M, "Mateusz", "Drzyzga", 95031206855);
-
+            SavingsAccount savingsAccount = new SavingsAccount("940000000001", 0.0M, "Mateusz", "Drzyzga", 95031206855);                                 
+            SavingsAccount savingsAccount2 = new SavingsAccount("940000000002", 0.0M, "Mateusz", "Drzyzga", 95031206855);           
+            BillingAccount billingAccount = new BillingAccount("940000000003", 0.0M, "Mateusz", "Drzyzga", 95031206855);
+            
             Printer printer = new Printer();
             printer.Print(savingsAccount);
             printer.Print(savingsAccount2);
