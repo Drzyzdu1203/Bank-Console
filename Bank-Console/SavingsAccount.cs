@@ -14,6 +14,10 @@ namespace Bank_Console
         {
         }
 
+        public override string TypeName()
+        {
+            return "OSZCZĘDNOŚCIOWE";
+        }
 
     }
 }

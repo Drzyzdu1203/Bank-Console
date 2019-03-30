@@ -15,17 +15,29 @@ namespace Bank_Console
             Console.WriteLine(name);
             Console.WriteLine(author);
             Console.WriteLine();
-            
-            SavingsAccount savingsAccount = new SavingsAccount("940000000001", 0.0M, "Mateusz", "Drzyzga", 95031206855);                                 
-            SavingsAccount savingsAccount2 = new SavingsAccount("940000000002", 0.0M, "Mateusz", "Drzyzga", 95031206855);           
-            BillingAccount billingAccount = new BillingAccount("940000000003", 0.0M, "Mateusz", "Drzyzga", 95031206855);
-
-            Console.WriteLine("Pierwsze konto w systemie dostał(-a): {0}", savingsAccount.GetFullName());
-
+           
             Printer printer = new Printer();
-            printer.Print(savingsAccount);
-            printer.Print(savingsAccount2);
-            printer.Print(billingAccount);
+           
+
+            Account account;
+            
+            account = new SavingsAccount("940000000001", 0.0M, "Mateusz", "Drzyzga", 95031206855);
+            printer.Print(account);
+            
+            account = new BillingAccount("940000000002", 0.0M, "Mateusz", "Drzyzga", 95031206855);
+            printer.Print(account);
+
+            Console.WriteLine("Pierwsze konto w systemie dostał(-a): {0}", account.GetFullName());
+
+
+
+
+
+
+
+
+
+
 
 
 

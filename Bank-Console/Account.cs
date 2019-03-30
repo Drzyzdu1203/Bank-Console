@@ -23,6 +23,8 @@ namespace Bank_Console
             Pesel = pesel;
         }
 
+        public abstract string TypeName();
+
         public string GetFullName()
         {
             return string.Format("{0} {1}", FirstName, LastName);
@@ -30,7 +32,7 @@ namespace Bank_Console
 
         public string GetBalance()
         {
-            return string.Format("{0} zł", Balance);
+            return string.Format("{0}", Balance);
         }
     }    
 }

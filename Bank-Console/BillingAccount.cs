@@ -13,5 +13,10 @@ namespace Bank_Console
             : base(accountNumber, balance, firstName, lastName, pesel)      //konstruktor klasy bazowej
         {            
         }
+
+        public override string TypeName()
+        {
+            return "ROZLICZENIOWE";
+        }
     }
 }
