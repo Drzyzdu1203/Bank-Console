@@ -10,6 +10,11 @@ namespace Bank_Console
     {
         static void Main(string[] args)
         {
+            string name = "Nazwa: Bank";
+            string author = "Autor: Mateusz Drzyzga";
+            Console.WriteLine(name);
+            Console.WriteLine(author);
+            Console.ReadKey();
         }
     }
 }
