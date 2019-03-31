@@ -9,8 +9,8 @@ namespace Bank_Console
     class BillingAccount : Account
     {
      
-        public BillingAccount(string accountNumber, decimal balance, string firstName, string lastName, long pesel)
-            : base(accountNumber, balance, firstName, lastName, pesel)      //konstruktor klasy bazowej
+        public BillingAccount(int id, string firstName, string lastName, long pesel)
+            : base(id, firstName, lastName, pesel)      //konstruktor klasy bazowej
         {            
         }
 
