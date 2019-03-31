@@ -22,11 +22,16 @@ namespace Bank_Console
 
             Console.WriteLine("Pierwsze konto w systemie dostał(-a): {0}", savingsAccount.GetFullName());
 
-            Printer printer = new Printer();
+            
+            IPrinter printer = new Printer();
+            IPrinter smallPrinter = new SmallPrinter();
 
             printer.Print(savingsAccount);
             printer.Print(savingsAccount2);
             printer.Print(billingAccount);
+            smallPrinter.Print(savingsAccount2);
+
+            
 
 
 

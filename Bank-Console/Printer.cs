@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Console
 {
-    class Printer
+    class Printer : IPrinter
     {
         public void Print(Account account)
         {
