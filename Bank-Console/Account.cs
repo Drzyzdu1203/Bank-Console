@@ -8,12 +8,12 @@ namespace Bank_Console
 {
     abstract class Account      // klasa abstrakcyjna oznacza ze nie mozemy w glownej klasie tworzyc obiektow z niej
     {
-        public int Id;
-        public string AccountNumber;        // Wczesniej to wszystko bylo w klasie savings i billing, zastosowalem tu dziedziczenie
-        public decimal Balance;
-        public string FirstName;
-        public string LastName;
-        public long Pesel;
+        public int Id { get; }
+        public string AccountNumber { get; }        // Wczesniej to wszystko bylo w klasie savings i billing, zastosowalem tu dziedziczenie
+        public decimal Balance { get; }
+        public string FirstName { get; }
+        public string LastName { get; }
+        public long Pesel { get; }
 
         public Account(int id, string firstName, string lastName, long pesel)
         {
