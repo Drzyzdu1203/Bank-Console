@@ -12,6 +12,6 @@ ________________________________________________________________________________
 [PL]
 Jest to prosta aplikacja konsolowa banku pozwalająca na proste operacje bankowe takie jak:
 
--Zakładanie kont oszczędnościowych i rozliczeniowych
--Wpłacie oraz wypłacie pieniędzy
--Mnożenie pieniędzy na koncie oszczędnościowym co miesiąc o konkretny procent
+- Zakładanie kont oszczędnościowych i rozliczeniowych
+- Wpłacie oraz wypłacie pieniędzy
+- Mnożenie pieniędzy na koncie oszczędnościowym co miesiąc o konkretny procent
