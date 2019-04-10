@@ -1,6 +1,5 @@
 # Bank-Console
-[PL] poniżej
-________________________________________________________________________________________
+__________________________________________________________________________________________
 
 [ENG]
 This is a simple bank console application that allows for simple banking operations such as:
@@ -8,6 +7,7 @@ This is a simple bank console application that allows for simple banking operati
 - Placement of savings and billing accounts
 - Pay and withdraw money
 - Multiplication of money on your savings account every month with a specific percentage
+__________________________________________________________________________________________
 
 [PL]
 Jest to prosta aplikacja konsolowa banku pozwalająca na proste operacje bankowe takie jak:
