@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bank_Console
 {
-    abstract class Account      // klasa abstrakcyjna oznacza ze nie mozemy w glownej klasie tworzyc obiektow z niej
+    abstract class Account
     {
         public int Id { get; }
-        public string AccountNumber { get; }        // Wczesniej to wszystko bylo w klasie savings i billing, zastosowalem tu dziedziczenie
-        public decimal Balance { get; }
+        public string AccountNumber { get; }
+        public decimal Balance { get; protected set; }
         public string FirstName { get; }
         public string LastName { get; }
         public long Pesel { get; }
@@ -29,7 +29,9 @@ namespace Bank_Console
 
         public string GetFullName()
         {
-            return string.Format("{0} {1}", FirstName, LastName);
+            string fullName = string.Format("{0} {1}", FirstName, LastName);
+
+            return fullName;
         }
 
         public string GetBalance()
@@ -37,11 +39,16 @@ namespace Bank_Console
             return string.Format("{0}", Balance);
         }
 
-        private string generateAccountNumber(int id)        // generowanie numeru konta do ogarniecia.
+        public void ChangeBalance(decimal value)
         {
-            var accountNumber = string.Format("94{0:D10}", Id);
+            Balance += value;
+        }
+
+        private string generateAccountNumber(int id)
+        {
+            var accountNumber = string.Format("94{0:D10}", id);
 
             return accountNumber;
         }
-    }    
+    }
 }

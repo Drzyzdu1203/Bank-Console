@@ -8,10 +8,14 @@ namespace Bank_Console
 {
     class BillingAccount : Account
     {
-     
         public BillingAccount(int id, string firstName, string lastName, long pesel)
-            : base(id, firstName, lastName, pesel)      //konstruktor klasy bazowej
-        {            
+            : base(id, firstName, lastName, pesel)
+        {
+        }
+
+        public void TakeCharge(decimal value)
+        {
+            Balance -= value;
         }
 
         public override string TypeName()

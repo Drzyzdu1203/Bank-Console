@@ -10,20 +10,8 @@ namespace Bank_Console
     {
         static void Main(string[] args)
         {
-            AccountsManager manager = new AccountsManager();
-
-            manager.CreateBillingAccount("Mateusz", "Drzyzga", 1234567890);
-            manager.CreateSavingsAccount("Mateusz", "Drzyzga", 1234567890);
-            manager.CreateSavingsAccount("Aaaaa", "Bbbbb", 0987654321);
-
-            IList<Account> accounts = (IList<Account>)manager.GetAllAccounts();
-
-            Printer printer = new Printer();
-
-            printer.Print(accounts[0]);
-            printer.Print(accounts[2]);
-
-            Console.ReadKey();            
+            BankManager bankManager = new BankManager();
+            bankManager.Run();
         }
     }
 }
